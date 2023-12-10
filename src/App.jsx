@@ -11,6 +11,7 @@ import { Nike } from "./pages/Nike";
 import { Adidas } from "./pages/Adidas";
 import { OtrasMarcas } from "./pages/OtrasMarcas";
 import Footer from "./components/Footer";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
@@ -19,16 +20,97 @@ function App() {
         <Container>
           <NavbarRes />
           <Routes>
-            <Route index element={<Landing />} />
-            <Route path="ropa" element={<RopaDeportiva />} />
-            <Route path="calzado" element={<Calzado />} />
-            <Route path="equipamiento" element={<Equipamiento/>} />
-            <Route path="accesorios" element={<Accesorios />} />
-            <Route path="nike" element={<Nike />} />
-            <Route path="adidas" element={<Adidas />} />
-            <Route path="otras-marcas" element={<OtrasMarcas />} />
+            <Route
+              index
+              element={
+                <>
+                  <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Veil of Vitality</title>
+                  </Helmet>
+                  <Landing />
+                </>
+              }
+            />
+            <Route
+              path="ropa"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Ropa</title>
+                  </Helmet>
+                  <RopaDeportiva />
+                </>
+              }
+            />
+            <Route
+              path="calzado"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Calzado</title>
+                  </Helmet>
+                  <Calzado />
+                </>
+              }
+            />
+            <Route
+              path="equipamiento"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Equipamiento</title>
+                  </Helmet>
+                  <Equipamiento />
+                </>
+              }
+            />
+            <Route
+              path="accesorios"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Accesorios</title>
+                  </Helmet>
+                  <Accesorios />
+                </>
+              }
+            />
+            <Route
+              path="nike"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Nike</title>
+                  </Helmet>
+                  <Nike/>
+                </>
+              }
+            />
+            <Route
+              path="adidas"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Adidas</title>
+                  </Helmet>
+                  <Adidas />
+                </>
+              }
+            />
+            <Route
+              path="otras-marcas"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | Otros</title>
+                  </Helmet>
+                  <OtrasMarcas />
+                </>
+              }
+            />
           </Routes>
-          <Footer/>
+          <Footer />
         </Container>
       </div>
     </BrowserRouter>
