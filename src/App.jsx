@@ -9,9 +9,12 @@ import { Equipamiento } from "./pages/Equipamiento";
 import { Accesorios } from "./pages/Accesorios";
 import { Nike } from "./pages/Nike";
 import { Adidas } from "./pages/Adidas";
-import { OtrasMarcas } from "./pages/OtrasMarcas";
+import { Sobre } from "./pages/Sobre";
 import Footer from "./components/Footer";
 import { Helmet } from "react-helmet";
+import SideMenu from "./components/SideMenu";
+import { Carrito } from "./pages/Carrito";
+import { Comprar } from "./pages/Comprar";
 
 function App() {
   return (
@@ -39,6 +42,7 @@ function App() {
                   <Helmet>
                     <title>Veil of Vitality | Ropa</title>
                   </Helmet>
+                  {/* <SideMenu /> */}
                   <RopaDeportiva />
                 </>
               }
@@ -95,21 +99,46 @@ function App() {
                     <title>Veil of Vitality | Adidas</title>
                   </Helmet>
                   <Adidas />
+                  
                 </>
               }
             />
             <Route
-              path="otras-marcas"
+              path="sobre"
               element={
                 <>
                   <Helmet>
                     <title>Veil of Vitality | Otros</title>
                   </Helmet>
-                  <OtrasMarcas />
+                  <Sobre />
                 </>
               }
             />
+              <Route
+              path="carrito"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | carrito</title>
+                  </Helmet>
+                  <Carrito />
+                </>
+              }
+            />
+               <Route
+              path="comprar"
+              element={
+                <>
+                  <Helmet>
+                    <title>Veil of Vitality | comprar</title>
+                  </Helmet>
+                  <Comprar />
+                </>
+              }
+            />
+            
           </Routes>
+         
           <Footer />
         </Container>
       </div>

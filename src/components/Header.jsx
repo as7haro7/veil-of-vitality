@@ -6,12 +6,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
-function NavbarRes() {
+import { FaShoppingCart } from "react-icons/fa";function NavbarRes() {
   return (
     <>
       {["md"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary ">
           <Container fluid>
             <Navbar.Brand as={Link} to="/">
               <img
@@ -53,24 +52,20 @@ function NavbarRes() {
                     <NavDropdown.Item as={Link} to="/nike">
                       Nike
                     </NavDropdown.Item>
+                    <NavDropdown.Divider />
                     <NavDropdown.Item as={Link} to="/adidas">
                       Adidas
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/otras-marcas">
-                      Otras Marcas
-                    </NavDropdown.Item>
+                    
                   </NavDropdown>
+                  <Nav.Link as={Link} to="/sobre">
+                    Sobre
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/carrito">
+                  <FaShoppingCart />
+                  </Nav.Link>
+               
                 </Nav>
-                {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Buscar"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Buscar</Button>
-          </Form> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

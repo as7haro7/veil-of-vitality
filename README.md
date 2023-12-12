@@ -24,18 +24,14 @@ Este es un proyecto de tienda deportiva desarrollado con React y Bootstrap. El n
 
 3. **Instala las dependencias del proyecto utilizando npm o yarn:**
     npm install
-    # o
-    yarn install
+
 
 4. **Una vez que las dependencias estén instaladas, puedes ejecutar la aplicación con el siguiente comando:**
    npm start
-    # o
-    yarn start
 
 5. **Ejecutar la Aplicación:**
     npm start
-    # o
-    yarn start
+
 
 6. **Explorar la Aplicación:**
     - Abre tu navegador y ve a http://localhost:3000.
@@ -43,8 +39,7 @@ Este es un proyecto de tienda deportiva desarrollado con React y Bootstrap. El n
 
 7. **Construir para Producción (Opcional):**
     npm run build
-    # o
-    yarn build
+  
 
 8. **Personalización:**
     - Personaliza la aplicación según tus necesidades editando los archivos en el directorio src.
