@@ -48,7 +48,7 @@ Este es un proyecto de tienda deportiva desarrollado con React y Bootstrap. El n
     solo io
 
 ## Licencia
-    Pofavo dar creditos, no sea malo :(
+    Porfavor dar creditos, no sea malo :(
 
 
 
