@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/veil-of-vitality/static/css/main.bad3c402.css",
+    "main.js": "/veil-of-vitality/static/js/main.5adb81af.js",
+    "static/js/787.ee878910.chunk.js": "/veil-of-vitality/static/js/787.ee878910.chunk.js",
+    "index.html": "/veil-of-vitality/index.html",
+    "main.bad3c402.css.map": "/veil-of-vitality/static/css/main.bad3c402.css.map",
+    "main.5adb81af.js.map": "/veil-of-vitality/static/js/main.5adb81af.js.map",
+    "787.ee878910.chunk.js.map": "/veil-of-vitality/static/js/787.ee878910.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bad3c402.css",
+    "static/js/main.5adb81af.js"
+  ]
+}
